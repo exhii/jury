@@ -1,0 +1,159 @@
+*{
+    font-family: Arial;
+}
+
+body{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+   
+}
+
+.container {
+    display: grid;
+    border: .2rem black solid;
+    background-color: white;
+    gap: .6rem;
+    height: 97vh;
+    aspect-ratio: 14/9;
+    grid-template: repeat(14,1fr)/ repeat(8,1fr);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.header {
+    grid-area: 1 / 1 / 3 / 9;
+    background-color: rgba(174, 108, 222, 0.436) ;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    background-image: linear-gradient(rgb(111, 59, 189), rgba(174, 108, 222, 0.436));
+    justify-items: center;
+    align-items:center;
+
+    padding-left: 1%;
+    padding-right: 2% ;
+    margin-bottom: 2.7%;
+    border-end-end-radius: 2rem ;
+    border-end-start-radius: 2rem;
+    position: relative;
+    border-bottom: .2rem black solid;
+    box-shadow:  0rem .3rem .3rem gray;
+    overflow: hidden;
+
+}
+
+.logo {
+    grid-column: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    height: 3.5rem;
+
+}
+
+.image {
+    height: 100%;
+    border-radius: 50%; 
+}
+
+.title {
+    grid-area: 1 / 2 / end /span 2;
+    font-size: 2rem;
+    align-self: center;
+    font-weight: bold;
+
+}
+
+.logout {
+    grid-area: 1 / 4 /end /span 1;
+    font-size: 1.2rem;
+    justify-self:right;
+    color: black;
+      
+}
+
+.logout a{
+    color: black;
+}
+
+.video {
+    grid-area: 3 / 2 / 12 / 8;
+    margin-top: 3%;  
+    display: flex;
+    justify-content: center;
+}
+
+.vid {
+    border: grey .4rem solid;
+    outline: black .2rem solid;
+    
+}
+
+.buttons{
+    grid-area: 12 / 2 / 13 / 8 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+   
+.button {
+    background-color: rgb(172, 170, 170);
+    border-radius: 10%;
+    height:175%;
+    font-size: 1rem;
+}
+
+.box {
+    display: flex;
+}
+
+.footer {
+    grid-area: 14/ 1 / 15 / 9;
+    background-color: rgba(174, 108, 222, 0.436);
+    align-content: center;
+    padding-left: 2%;
+    background-image: linear-gradient(rgba(174, 108, 222, 0.436), rgb(111, 59, 189) );
+    border-top: .13rem black solid;
+    font-size: 1.1rem;
+}
+
+
+
+/******* HOVER ******/
+
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: .3rem .3rem .3rem black ;
+}
+
+.button:hover {
+    background-color:  rgba(222, 228, 70, 0.8);
+    transform: scale(1.2);
+}
+
+.logout a:hover {
+    color: white;
+}
+   
+@media screen and (min-width:1800px) {
+    html{
+        font-size:48px;
+    }
+    .logo {
+        height: 150px;
+    }
+
+   
+    
+    
+
+.vid {
+    border: grey .4rem solid;
+    outline: black .2rem solid;
+    font-size: 2rem;
+}
+
+
+    
+}
